@@ -1,0 +1,43 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'war'
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'idea'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+configurations{
+	providedRuntime
+}
+
+dependencies {
+	compile('com.google.guava:guava:17.0')
+	compile('org.springframework.boot:spring-boot-starter-aop')
+	compile('org.springframework.retry:spring-retry')
+	compile('org.springframework:spring-webmvc:4.1.6.RELEASE')
+	compile('com.github.jknack:handlebars-springmvc:4.0.6')
+//	compile 'com.github.jknack:handlebars-helpers:4.0.6',
+//			'com.github.jknack:handlebars-jackson2:4.0.6',
+//			'com.github.jknack:handlebars-humanize:4.0.6',
+//			'com.github.jknack:handlebars-markdown:4.0.6'
+	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	compileOnly('org.projectlombok:lombok')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
