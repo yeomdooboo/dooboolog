@@ -14,4 +14,9 @@ public class MainController {
 		mav.addObject("projectName", "Dooboo Project");
 		return mav;
 	}
+
+	@RequestMapping("/about")
+	public ModelAndView about() {
+		return new ModelAndView("about");
+	}
 }
