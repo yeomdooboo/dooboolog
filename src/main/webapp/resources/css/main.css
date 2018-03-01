@@ -18,6 +18,14 @@ body {
   background-color: #ffffff;
 }
 
+.nav_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #dde;
+}
+
 .nav__box {
   width: 1000px;
   height: 100%;
