@@ -10,7 +10,7 @@ public class MainController {
 
 	@RequestMapping
 	public ModelAndView index() {
-		ModelAndView mav = new ModelAndView("index");
+		ModelAndView mav = new ModelAndView("main");
 		mav.addObject("projectName", "Dooboo Project");
 		return mav;
 	}
