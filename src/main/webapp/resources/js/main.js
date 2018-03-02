@@ -1,23 +1,15 @@
 doobooRequire([
-    'jquery',
-    'lodash'
-], function($, _) {
-    console.log($().jquery);
-    _.forEach([1, 2, 3], function(value) {
-        console.log(value);
-    });
-    console.log('dooboo require js!');
-
+    'jquery'
+], function($) {
     $(document).ready(function() {
-        var navBar = $(".nav").offset();
+        var topBar = $(".top__box").offset();
         $(window).scroll(function() {
             var docScrollY = $(document).scrollTop();
-            var barThis = $(".nav");
-
-            if (docScrollY > navBar.top) {
-                barThis.addClass("nav_fix");
+            var barThis = $(".top__box");
+            if (docScrollY > topBar.top) {
+                barThis.addClass("top_fix");
             } else {
-                barThis.removeClass("nav_fix");
+                barThis.removeClass("top_fix");
             }
         });
     });

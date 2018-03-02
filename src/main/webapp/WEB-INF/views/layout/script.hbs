@@ -1,5 +1,6 @@
+로딩이 된거냐
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-<script type="text/javascript" src="resources/js/lib/require.js"></script>
+<script type="text/javascript" src="/resources/js/lib/require.js"></script>
 <script type="text/javascript">
   //requireJS 기본 설정 부분
   var doobooRequire = requirejs.config({
@@ -25,8 +26,8 @@
     */
     paths:{
       //뒤에 js 확장자는 생략한다.
-      'jquery': 'lib/jquery-3.3.1.min',
-      'lodash': 'lib/lodash.core.min'
+      'jquery': '/resources/js/lib/jquery-3.3.1.min',
+      'lodash': '/resources/js/lib/lodash.core.min'
 //      'text': '../lib/require/text',
 //      'angular': '../lib/angular/angular-1.0.4'
     },
@@ -47,4 +48,6 @@
   });
 
 </script>
-<script type="text/javascript" src="resources/js/main.js"></script>
+<script type="text/javascript" src="/resources/js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+{{#block "script"}}{{/block}}

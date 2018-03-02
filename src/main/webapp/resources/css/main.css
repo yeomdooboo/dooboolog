@@ -3,71 +3,82 @@
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
+  color: #333;
   background-color: #ffffff;
   font-family: Malgun Gothic,"맑은 고딕","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
 }
 
-.nav {
+.top {
+  width: 100%;
+  height: 80px;
+}
+
+.top__box {
   width: 100%;
   height: 80px;
   background-color: #ffffff;
 }
 
-.nav_fix {
+.top_fix {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   border-bottom: 1px solid #dde;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.nav__box {
+.top__box__wrapper {
   width: 1000px;
-  height: 100%;
+  height: 80px;
   padding: 25px 50px 0;
   margin: 0 auto;
 }
 
-.nav__box__title {
+.top__box__title {
   float: left;
   width: 200px;
   height: 36px;
 }
-.nav__box__title>a {
+.top__box__title > a {
   font-family: 'Indie Flower', cursive;
   font-size: 30px;
   font-weight: bold;
   color: #999;
 }
 
-.nav__box__menu {
+.top__box__menu {
   padding-top: 16px;
   float: left;
 }
-.nav__box__menu > ul {
-  list-style: none;
+.top__box__menu > ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.nav__box__menu > ul > li {
+.top__box__menu > ul > li {
   float: left;
   width : 100px;
   height: 20px;
   border : 0;
 }
 
-.nav__box__menu > ul > li > a {
+.top__box__menu > ul > li > a {
   font-size: 16px;
   cursor: pointer;
   color: #666;
 }
-.nav__box__menu > ul > li > a:hover {
+.top__box__menu > ul > li > a:hover {
   color: #ccc;
 }
 
@@ -75,7 +86,7 @@ body {
   background-color: #fff;
   width: 1000px;
   height: 1600px;
-  padding: 20px 0;
+  padding: 50px 0;
   margin: 0 auto;
 }
 

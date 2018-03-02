@@ -1,0 +1,23 @@
+.cate-block {
+	float: left;
+	width: 800px;
+}
+
+.cate-list {
+	width: 200px;
+	float: left;
+}
+.cate-list > ul {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.cate-list > ul > li {
+	height: 30px;
+}
+.cate-list > ul > li > a {
+	cursor: pointer;
+}
+.cate-list > ul > li > a:hover {
+	color: #ccc;
+}

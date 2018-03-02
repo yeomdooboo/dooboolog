@@ -1,0 +1,20 @@
+{{#partial "section"}}
+	<section class="cate-block">
+		내용입니당~~
+	</section>
+	<nav class="cate-list">
+		<ul>
+			{{#each categories}}
+				<li>
+					<a href="#">
+						{{categoryName}}
+					</a>
+				</li>
+			{{/each}}
+		</ul>
+	</nav>
+{{/partial}}
+{{#partial "script"}}
+	<link rel="stylesheet" type="text/css" href="/resources/css/post/post.css">
+{{/partial}}
+{{> layout/layout}}
