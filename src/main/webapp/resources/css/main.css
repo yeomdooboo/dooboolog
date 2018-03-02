@@ -11,6 +11,31 @@ ul {
   list-style: none;
 }
 
+button.lined.thin {
+  border:solid 2px #41403E;
+}
+
+/* https://codepen.io/tmrDevelops/pen/VeRvKX?limit=all&page=3&q=button */
+button {
+  align-self:center;
+  background:transparent;
+  padding:1rem 1rem;
+  margin:0 1rem;
+  transition:all .5s ease;
+  color:#41403E;
+  font-size:1.5rem;
+  letter-spacing:1px;
+  outline:none;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+button:hover{
+  box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+button.dashed.thin {
+  border:dashed 2px #41403E;
+}
+
 body {
   color: #333;
   background-color: #ffffff;
@@ -94,7 +119,7 @@ body {
 
 footer {
   float: left;
-  margin-top: 100px;
+  margin-top: 75px;
   padding-top: 50px;
   width: 100%;
   height: 100px;
