@@ -15,7 +15,9 @@ body {
   color: #333;
   background-color: #ffffff;
   font-family: Malgun Gothic,"맑은 고딕","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
   font-size: 14px;
+  margin: 0;
 }
 
 .top {
@@ -85,8 +87,20 @@ body {
 .section {
   background-color: #fff;
   width: 1000px;
-  height: 1600px;
+  height: 800px;
   padding: 50px 0;
   margin: 0 auto;
 }
 
+footer {
+  float: left;
+  margin-top: 100px;
+  padding-top: 50px;
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #ccc;
+}
+
+footer > div {
+  color: #ccc
+}

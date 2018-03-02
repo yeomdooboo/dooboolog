@@ -13,5 +13,5 @@ public class PostDto {
 	private int postId;
 	private int categoryId;
 	private String title;
-	private String text;
+	private String content;
 }

@@ -16,6 +16,8 @@ public class PostService {
 	private List<PostDto> getPostList(int cateogryId) {
 		List<PostDto> postDtos = new ArrayList<>();
 		postDtos.add(new PostDto(1, 1, "제목", "내용임 ㅋㅋㅋ"));
+		postDtos.add(new PostDto(1, 1, "두번째 글", "두부로그 꼭 완성시키자"));
+		postDtos.add(new PostDto(1, 1, "세번째 글", "나중엔 막 에디터도 넣고 그러자~"));
 		return postDtos;
 	}
 
